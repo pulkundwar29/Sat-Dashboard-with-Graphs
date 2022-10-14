@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    z-index: 0;
+}
+
+body {
+    background-color: #f2f2f2;
+}
+
+.slide {
+    text-align: left;
+    height: 100%;
+    width: 200px;
+    position: absolute;
+    background-color: black;
+    transition: 0.5s ease;
+    transform: translateX(-200px);
+    z-index: 3;
+    top: 0;
+
+}
+
+.slide h1 {
+    color: whitesmoke;
+    font-weight: 800;
+    text-align: right;
+    padding: 10px 0;
+    padding-right: 30px;
+    pointer-events: none;
+
+
+}
+
+.slide ul li {
+    list-style: none;
+
+
+}
+
+.slide ul li a {
+    color: #ACD6F4;
+    font-weight: 400;
+    padding: 9px 0;
+    display: block;
+    text-transform: capitalize;
+    text-decoration: none;
+    transition: 0.2s ease-out;
+}
+
+.slide ul li:hover a {
+    color: black;
+    background-color: white;
+}
+
+.slide ul li a i {
+    width: 40px;
+    text-align: center;
+}
+
+#logout {
+    color: wheat;
+    list-style: none;
+    text-align: right;
+    text-transform: capitalize;
+    position: absolute;
+    bottom: 2%;
+    padding: 55px;
+    font-weight: 500;
+    transition: 0.2s ease-out;
+    position: fixed;
+
+}
+
+#logout:hover a {
+    color: #ee5253;
+    background-color: black;
+
+
+
+}
+
+input {
+    display: none;
+    visibility: hidden;
+    -webkit-appearance: none;
+    
+}
+
+.toggle {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    border-radius: 2px;
+    background-color: gray;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 4;
+
+}
+
+.toggle .common {
+    position: absolute;
+    height: 2px;
+    width: 20px;
+    background-color: black;
+    border-radius: 50px;
+    transition: 0.3s ease;
+}
+
+.toggle .top_line {
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.toggle .middle_line {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.toggle .bottom_line {
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+input:checked~.toggle .top_line {
+    left: 2px;
+    top: 14px;
+    width: 25px;
+    transform: rotate(45deg);
+}
+
+input:checked~.toggle .bottom_line {
+    left: 2px;
+    top: 14px;
+    width: 25px;
+    transform: rotate(-45deg);
+}
+
+input:checked~.toggle .middle_line {
+    opacity: 0;
+    transform: rotate(20px);
+}
+
+input:checked~.slide {
+    transform: translateX(0);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 90%;
+    height: 439px;
+    position: relative;
+    left: 5%;
+    margin-top: 2%;
+    align-items: center;
+    justify-content: center;
+    border-radius: 22px;
+    overflow: hidden;
+    object-fit: contain;
+    align-content: center;
+  }
+
+
+
+  .card img{
+    align-items: center;
+    height: 439px;
+   
+ 
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  .tb thead{
+    background-color: black;
+    color: aliceblue;
+    display: grid;
+    justify-content: space-between;
+    row-gap: 80px;
+  }
+
+  
+.card1{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 90%;
+    height: 250px;
+    position: relative;
+    left: 5%;
+    margin-top: 2%;
+    align-items: center;
+    justify-content: center;
+    border-radius: 22px;
+    overflow: hidden;
+    object-fit: contain;
+    align-content: center;
+  }
+
+  .box{
+    margin: 5px;
+    padding: 5px;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border-radius: 22px;
+    z-index: 0;
+   
+}
+
+
+
+.tableFixHead {
+overflow-y: auto;
+height: 250px;
+z-index: 0;
+
+}
+
+.tableFixHead thead th {
+position: sticky;
+top: 0;
+background-color: black;
+color: white;
+box-shadow: 0 0 15px rgba(0, 0, 0.3, 0.3);
+}
+
+table {
+border-collapse: collapse;
+width: 100%;
+z-index: 0;
+}
+
+th,
+td {
+padding: 8px 16px;
+border: 1px solid #ccc;
+color: black;
+
+}
+
+th {
+background: #eee;
+color: white;}

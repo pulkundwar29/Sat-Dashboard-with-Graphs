@@ -1,0 +1,137 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="{% static 'base.css' %}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+        <title>Document</title>
+</head>
+
+
+{% comment %} <body>
+    <label>
+      <input type="checkbox">
+      <div class="toggle">
+        <span class="top_line common"></span>
+        <span class="middle_line common"></span>
+        <span class="bottom_line common"></span>
+      </div>
+      <div class="slide">
+        <h1 style="text-align:center ;">NLI</h1>
+        <ul>
+          <li><a href=""><i class="fas fa-box"></i>Dashboard</li></a>
+          <li><a href=""><i class="fas fa-user"></i>subh</li></a>
+          <li><a href=""><i class="fas fa-tv"></i>parth</li></a>
+          <li><a href=""><i class="fas fa-comments"></i>akansha</li></a>
+        </ul>
+        <div id="logout">
+          <ul>
+            <li><a href="">Log Out</a></li>
+          </ul>
+        </div>
+      </div>
+    </label> {% endcomment %}
+  
+    
+  
+    <body>
+      {% block content%}
+      <label>
+          <input type="checkbox">
+          <div class="toggle">
+              <span class="top_line common"></span>
+              <span class="middle_line common"></span>
+              <span class="bottom_line common"></span>
+          </div>
+          <div class="slide">
+              <h1 style="text-align:center ;">NLI</h1>
+              <ul>
+                  <li><a href=""><i class="fas fa-box"></i>Dashboard</li></a>
+                  <li><a href=""><i class="fas fa-user"></i>subh</li></a>
+                  <li><a href=""><i class="fas fa-tv"></i>parth</li></a>
+                  <li><a href=""><i class="fas fa-comments"></i>akansha</li></a>
+              </ul>
+              <div id="logout">
+                  <ul>
+                      <li><a href="">Log Out</a></li>
+                  </ul>
+              </div>
+          </div>
+      </label>
+      {% endblock content%}
+
+      <div class="card" style="text-align:center" width="400" height="200">
+    
+       
+        <canvas id="myChart" ></canvas>   
+  
+
+</div>
+<script src="{% static 'main.js' %}"></script>
+</div>
+
+<div class="card1" style="text-align:center">
+  <div class="tableFixHead">
+    <table>
+      <thead>
+        <tr>
+          <th>Col 1</th>
+          <th>Col 2</th>
+          <th>Col 3</th>
+          <th>Col 4</th>
+
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1.1</td>
+          <td>2.1</td>
+          <td>3.1</td>
+          <td>3.1</td>
+        </tr>
+        <tr>
+          <td>1.1</td>
+          <td>2.1</td>
+          <td>3.1</td>
+          <td>3.1</td>
+        </tr>
+        <tr>
+          <td>1.1</td>
+          <td>2.1</td>
+          <td>3.1</td>
+          <td>3.1</td>
+        </tr>
+        <tr>
+          <td>1.1</td>
+          <td>2.1</td>
+          <td>3.1</td>
+          <td>3.1</td>
+        </tr>
+        <tr>
+          <td>1.1</td>
+          <td>2.1</td>
+          <td>3.1</td>
+          <td>3.1</td>
+        </tr>
+        <tr>
+          <td>1.2</td>
+
+
+
+  </div>
+</div>
+  </body>
+  
+
+  
+</html>
